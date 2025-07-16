@@ -4,8 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김지원의 포트폴리오</title>
+    <!-- 웹연결 -->
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 사용자 파일 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/scroll.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="left">
+                <a href="#" class="active">Intro</a>
+                <a href="#">Profile</a>
+                <a href="#">Web-Project</a>
+                <a href="#">Design</a>
+            </div>
+            <a href="#" class="contactBtn">Contact ME, 지원</a>
+        </nav>
+    </header>
+    <div class="swiper" id="wrap"><!-- 전체묶음 -->
+        <div class="swiper-wrapper"><!-- 전체스와이퍼 -->
+            <div class="swiper-slide intro"><!-- 1행 : 인트로 시작 -->
+                <img src="./images/intro.png" alt="인트로소개이미지">
+            </div>
+            <div class="swiper-slide profile"><!-- 2행 : 프로필 시작 -->
+                <div class="container">
+                    <div class="left">
+                        <p>:) 안녕하세요 ,</p>
+                        <div class="contents">
+                            <div class="photo_ambition">
+                                <img src="./images/profile.png" alt="김지원프로필이미지">
+                                <p>조화롭게 어우러지면서도<br>고유한 향기를 가진 들꽃처럼<br><em>편안한 특색을 담아내고 싶은</em><br>디자이너 김지원입니다</p>
+                            </div>
+                            <div class="keywords">
+                                <span>#긍정적</span>
+                                <span>#성실함</span>
+                                <span>#창의성</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="first">
+                            <div class="wrap profile"><!-- 프로필 -->
+                                <h1>PROFILE</h1>
+                                <div class="contents">
+                                    <div class="classification"><!-- 분류 -->
+                                        <h2>Name</h2>
+                                        <h2>Birth</h2>
+                                        <h2>E-mail</h2>
+                                        <h2>Phone</h2>
+                                        <h2>GitHub</h2>
+                                    </div>
+                                    <div class="info"><!-- 그에 대한 정보 -->
+                                        <p>김지원 / KIM JIWON</p>
+                                        <p>2000.02.19</p>
+                                        <p>kjw89716@gmail.com</p>
+                                        <p>010-3387-9019</p>
+                                        <p>https://github.com/1619kjw</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap education"><!-- 교육 -->
+                                <h1>EDUCATION</h1>
+                                <div class="contents">
+                                    <div class="classification"><!-- 분류 -->
+                                        <h2>2025.08</h2>
+                                        <h2>2024.02</h2>
+                                        <h2>2019.02</h2>
+                                    </div>
+                                    <div class="info"><!-- 그에 대한 정보 -->
+                                        <p class="course">UI/UX 프론트엔드 반응형 웹디자인&<br>
+                                            웹퍼블리셔 개발 양성과정 수료</p>
+                                        <p>서울신학대학교 보육학과 졸업</p>
+                                        <p>연수여자고등학교 졸업</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap experience"><!-- 경험 -->
+                                <h1>EXPERIENCE</h1>
+                                <div class="contents">
+                                    <div class="classification"><!-- 분류 -->
+                                        <h2>2023.06-2023.08</h2>
+                                        <h2>2022.05-2023.02</h2>
+                                        <h2>2020.11-2021.07</h2>
+                                    </div>
+                                    <div class="info"><!-- 그에 대한 정보 -->
+                                        <p>포스코타워꿈나무어린이집 보육실습</p>
+                                        <p>파스쿠찌 아르바이트</p>
+                                        <p>배스킨라빈스 아르바이트</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap license"><!-- 자격증 -->
+                                <h1>LICENSE</h1>
+                                <div class="contents">
+                                    <div class="classification"><!-- 분류 -->
+                                        <h2>2024.02</h2>
+                                        <h2>2024.02</h2>
+                                    </div>
+                                    <div class="info"><!-- 그에 대한 정보 -->
+                                        <p>보육교사 2급 자격증</p>
+                                        <p>손유희지도사 자격증</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="second">
+                            <div class="skills"><!-- 스킬 -->
+                                <h1>SKILLS</h1>
+                                <ul class="tools_wrap"><!-- 스킬 내용 전체 묶음(아이콘+게이지바부분 3행) -->
+                                    <li class="list list1"><!-- 1행(디자인) -->
+                                        <div class="tool design"><!-- 제목+아이콘3개 -->
+                                            <h2>design</h2>
+                                            <!-- 가상선택자 구분선 -->
+                                            <span>
+                                                <img src="./images/ps_icon.png" alt="포토샵아이콘">
+                                                <img src="./images/ai_icon.png" alt="일러스트레이터아이콘">
+                                                <img src="./images/figma_icon.png" alt="피그마아이콘">
+                                            </span>
+                                        </div>
+                                        <div class="bar bar65"><!-- 디자인 게이지 바 -->
+                                            <div class="bar-fill"></div>
+                                        </div>
+                                    </li>
+                                    <li class="list list2"><!-- 2행(코딩) -->
+                                        <div class="tool coding"><!-- 제목+아이콘3개 -->
+                                            <h2>coding</h2>
+                                            <!-- 가상선택자 구분선 -->
+                                            <span>
+                                                <img src="./images/git_icon.png" alt="깃허브아이콘">
+                                                <img src="./images/html_icon.png" alt="html아이콘">
+                                                <img src="./images/css_icon.png" alt="css아이콘">
+                                            </span>
+                                        </div>
+                                        <div class="bar bar70"><!-- 코딩 게이지 바 -->
+                                            <div class="bar-fill"></div>
+                                        </div>
+                                    </li>
+                                    <li class="list list3"><!-- 3행(기타코딩) -->
+                                        <h2>javascript/react/jquery</h2><!-- 제목 -->
+                                        <div class="bar bar35"><!-- 기타 코딩 게이지 바 -->
+                                            <div class="bar-fill"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skill_details"><!-- 스킬 상세 -->
+                                <dl>
+                                    <!-- 가상선택자로 목록 동그라미 -->
+                                    <dt>Photoshop</dt>
+                                    <dd>이미지 보정 및 배너, 상세페이지 디자인 제작 가능</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Illustrator</dt>
+                                    <dd>로고, 캐릭터 디자인 제작 가능</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Figma</dt>
+                                    <dd>웹/앱디자인 와이어프레임, 프로토타입 제작 가능</dd>
+                                </dl>
+                                <dl>
+                                    <dt>GitHub</dt>
+                                    <dd>git 명령을 이용해 gitHub 코드저장소 활용 가능</dd>
+                                </dl>
+                                <dl>
+                                    <dt>HTML 5</dt>
+                                    <dd>웹표준&웹접근성에 맞는 최신 코드 사용 가능</dd>
+                                </dl>
+                                <dl>
+                                    <dt>CSS 3</dt>
+                                    <dd>다양한 애니메이션, 디자인 구현 및 반응형 웹에 대한 이해</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Javascript</dt>
+                                    <dd>메뉴, 슬라이드 등 웹에 들어가는 일부 동적 기능 구현</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Jquery/React</dt>
+                                    <dd>구현과정과 다양한 훅에 대한 이해</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide web_project"></div>
+            <div class="swiper-slide design"></div>
+            <div class="swiper-slide contact"></div>
+        </div>
+    </div>
 </body>
 </html>

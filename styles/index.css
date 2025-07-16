@@ -1,0 +1,236 @@
+header {
+    position:fixed; left:0; top:0;
+    background-color:#fff;
+    width:100%; height:80px; z-index:900;
+    padding:0 100px; /* 하단 그림자 추가하기 */
+}
+header nav {
+    display:flex; justify-content:space-between;
+    align-items:center;
+}
+header nav .left {
+    
+}
+header nav .left a {
+    padding:0 10px; height:80px; line-height:80px;
+    font-weight:500; color:#999; width:max-content;
+    margin-right:40px; display:inline-block;
+}
+header nav .left a:last-child {
+    margin-right:0;
+}
+header nav .left a.active {
+    color:#AA48B9; border-bottom:3px solid #AA48B9;
+}
+header nav .contactBtn {
+    color:#fff; background:#AA48B9;
+    padding:12px; border-radius:5px;
+}
+#wrap {
+    height:100vh;
+}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide {
+    padding-top:80px; /* 헤더높이만큼 패딩줘서 내용 가려지지않게하기 */
+}
+#wrap .swiper-wrapper .swiper-slide.intro {
+
+}
+#wrap .swiper-wrapper .swiper-slide.profile {}
+#wrap .swiper-wrapper .swiper-slide.web_project {
+    background-color:red;}
+#wrap .swiper-wrapper .swiper-slide.design {
+    background-color:green;}
+#wrap .swiper-wrapper .swiper-slide.contact {
+    background-color:purple;}
+/* -------------------intro 1행 */
+#wrap .swiper-wrapper .swiper-slide.intro {}
+
+
+/* -------------------profile 2행 */
+#wrap .swiper-wrapper .swiper-slide.profile {
+    padding:123px 200px 0;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container {
+    display:flex; justify-content:space-between; align-items:center;
+    width:1450px; 
+    border:1px solid aqua; margin:0 auto;
+
+}
+/* --------------------------1열 : 지원자 소개 영역 */
+#wrap .swiper-wrapper .swiper-slide.profile .container .left {
+    background:pink; text-align:center;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left > p {
+    font-size:rem; font-weight:; color:#;
+    margin-bottom:60px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition img {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition img p {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition img p em {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .keywords {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .keywords span {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right {
+    display:flex; gap:160px; height:723px; border:1px solid red;
+}
+/* --------------------------2열 : 프로필, 교육, 경험, 자격증 설명 영역 */
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first {
+    display:flex; flex-flow:column nowrap; justify-content:space-between;
+}
+/* .wrap : 프로필, 교육, 경험, 자격증 모두 잡는 공통 디자인 */
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap {
+    width:375px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap h1 {
+    font-size:1.125rem; font-weight:600; color:#5B6CBE;background-color:#f5f5f5;
+    padding:10px; text-align:center; margin-bottom:20px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents {
+    padding:0 10px; display:flex;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents .classification {
+    margin-right:20px; 
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents .classification h2 {
+    font-size:0.938rem; font-weight:500; color:#777;
+    margin-bottom:15px; width:max-content;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents .classification h2:last-child {
+    margin-bottom:0;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents .info {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents .info p {
+    margin-bottom:15px; width:max-content;
+    font-size:0.938rem;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents .info p:last-child {
+    margin-bottom:0;
+}
+/* 달라지는 디자인 */
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap .contents .info .course {
+    /* 수강강의명 디자인 다름 */
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .education .contents {
+    /* 수직중앙정렬 */
+}
+/* --------------------------3열 : 스킬 설명 영역 */
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second {
+    width:400px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills {
+    margin-bottom:69px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills h1 {
+    font-size:1.125rem; font-weight:600; color:#5B6CBE; background-color:#f5f5f5;
+    padding:10px; text-align:center; margin-bottom:25px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap {
+    padding:0 10px; margin-bottom:15px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap:last-child {
+    margin-bottom:0;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list {
+    display:flex; justify-content:space-between; align-items:center;
+    margin-bottom:15px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list:last-child {margin-bottom:0;}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .tool {display:flex; align-items:center;}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .tool h2 {font-weight:500; color:#777;}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .tool h2::after {
+    /* 구분선 가상선택자 */
+    content:''; display:inline-block;
+    background-color:#999;
+    width:2px; height:12px;
+    margin:0 8px 0;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .tool span {
+    display:flex; gap:8px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .tool span img {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list h2 {
+    font-weight:500; color:#777;/* 기타 코딩 제목 따로 잡기 */
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .bar {/* 게이지 바 */}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .bar70 {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .bar75 {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .bar35 {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skills .tools_wrap .list .bar-fill {}
+/* ------------------------------------스킬 상세 나열 */
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skill_details {
+    padding:20px 20px 20px 30px;
+    border-left:3px solid #e4e4e4;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skill_details dl {
+    margin-bottom:15px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skill_details dl:last-child {
+    margin-bottom:0;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skill_details dl dt::before {
+    /* 목록 구분 점 가상선택자 */
+    content:''; display:inline-block;
+    width:10px; height:10px; border-radius:5px; background-color:#5B6CBE;
+    margin-right:10px;
+    line-height:15px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skill_details dl dt {
+    margin-bottom:8px; color:#5B6CBE; font-weight:500; font-size:0.938rem;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .second .skill_details dl dd {
+    font-size:0.938rem;
+}
+
+
+/* -------------------web_project 3행 */
+#wrap .swiper-wrapper .swiper-slide.web_project {}
+/* -------------------design 4행 */
+#wrap .swiper-wrapper .swiper-slide.design {}
+/* -------------------contact 5행 */
+#wrap .swiper-wrapper .swiper-slide.contact {}
+
+/* 테스트 */
+.bar {/* 바 전체 */
+width: 160px;
+height: 24px;
+background-color: #d9d9d9;
+border-radius: 20px;
+overflow: hidden;
+}
+
+.bar-fill {/* 바 채워지기 */
+height: 100%;
+background-color: #FF8C8C;
+width: 0;
+border-radius: 20px 0 0 20px;
+animation: fillBar 1s forwards;
+}
+
+.bar65 .bar-fill {
+animation-delay: 0.2s;
+animation-name: fillBar65;
+}
+
+.bar70 .bar-fill {
+animation-delay: 0.4s;
+animation-name: fillBar70;
+}
+
+.bar35 .bar-fill {
+animation-delay: 0.6s;
+animation-name: fillBar35;
+}
+
+@keyframes fillBar65 {
+to { width: 65%; }
+}
+
+@keyframes fillBar70 {
+to { width: 70%; }
+}
+
+@keyframes fillBar35 {
+to { width: 35%; }
+}
