@@ -2,7 +2,8 @@ header {
     position:fixed; left:0; top:0;
     background-color:#fff;
     width:100%; height:80px; z-index:900;
-    padding:0 100px; /* 하단 그림자 추가하기 */
+    padding:0 100px;
+    box-shadow:0 1px 5px rgba(0,0,0,0.1);
 }
 header nav {
     display:flex; justify-content:space-between;
@@ -33,12 +34,11 @@ header nav .contactBtn {
 #wrap .swiper-wrapper .swiper-slide {
     padding-top:80px; /* 헤더높이만큼 패딩줘서 내용 가려지지않게하기 */
 }
-#wrap .swiper-wrapper .swiper-slide.intro {
-
-}
+#wrap .swiper-wrapper .swiper-slide.intro {}
+#wrap .swiper-wrapper .swiper-slide.intro img {position:relative; top:-80px;}
 #wrap .swiper-wrapper .swiper-slide.profile {}
 #wrap .swiper-wrapper .swiper-slide.web_project {
-    background-color:red;}
+    background-color:white;}
 #wrap .swiper-wrapper .swiper-slide.design {
     background-color:green;}
 #wrap .swiper-wrapper .swiper-slide.contact {
@@ -53,27 +53,52 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.profile .container {
     display:flex; justify-content:space-between; align-items:center;
-    width:1450px; 
-    border:1px solid aqua; margin:0 auto;
+    width:1450px; margin:0 auto;
 
 }
 /* --------------------------1열 : 지원자 소개 영역 */
 #wrap .swiper-wrapper .swiper-slide.profile .container .left {
-    background:pink; text-align:center;
+    text-align:center;
 }
 #wrap .swiper-wrapper .swiper-slide.profile .container .left > p {
-    font-size:rem; font-weight:; color:#;
+    font-size:2.125rem; font-weight:500; color:#5B6CBE;
     margin-bottom:60px;
 }
-#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents {}
-#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition {}
-#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition img {}
-#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition img p {}
-#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition img p em {}
-#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .keywords {}
-#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .keywords span {}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents {
+    height:max-content;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition {margin-bottom:40px;}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition img {
+    margin-bottom:34px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition p {
+    font-weight:500; line-height:1.5; letter-spacing:0.05em; color:#444;
+    position:relative;/* 가상선택자(밑줄)의 부모위치기준 */
+    z-index:20;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition p em::before {
+    content:''; display:inline-block;
+    background-color:#C7CFF8; width:250px; height:8px;
+    position:absolute; left:5.77px; bottom:25.62px;
+    z-index:-999;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition p em {
+    font-weight:600; font-size:1.25rem; color:#444;
+    line-height:1.5; letter-spacing:0.05em;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .keywords {
+    line-height:25px;
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .keywords span {
+    background-color:#5B6CBE; padding:5px 10px; border-radius:20px;
+    color:#fff; font-size:0.938rem; font-weight:400; letter-spacing:0.1em;
+    margin-right:10px; 
+}
+#wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .keywords span:last-child {
+    margin-right:0;
+}
 #wrap .swiper-wrapper .swiper-slide.profile .container .right {
-    display:flex; gap:160px; height:723px; border:1px solid red;
+    display:flex; gap:160px; height:723px;
 }
 /* --------------------------2열 : 프로필, 교육, 경험, 자격증 설명 영역 */
 #wrap .swiper-wrapper .swiper-slide.profile .container .right .first {
@@ -184,8 +209,92 @@ header nav .contactBtn {
 }
 
 
-/* -------------------web_project 3행 */
-#wrap .swiper-wrapper .swiper-slide.web_project {}
+/* -------------------web_project 3행:덴프스 */
+#wrap .swiper-wrapper .swiper-slide.web_project {
+    /* 3,4,5,6행 공통 디자인 class*/
+    display:flex;
+}
+#wrap .swiper-wrapper .swiper-slide.#denps {}
+#wrap .swiper-wrapper .swiper-slide.web_project .result {
+    background-color:#ddd; width:1061px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 {
+    width:max-content; display:flex; flex-flow:column nowrap;
+    margin:0 auto; position:relative; top:95px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 > img {
+    margin:0 auto; margin-bottom:50px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 .protoBtn {/* 프로토타입보기 버튼 */
+    margin:0 auto; display:flex; align-items:center;
+    background-color:#AA48B9; padding:12px; border-radius:10px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 .protoBtn p {
+    font-weight:500; color:#fff;
+    margin-right:10px; 
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 .protoBtn img {}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain {
+    background-color:#F3EEDF; width:859px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 {
+    width:530px;
+    position:relative; top:140px; left:80px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents {
+    margin-bottom:60px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top {}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .title {
+    display:flex; align-items:end;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .title h1 {
+    font-size:2.125rem; font-weight:600; margin-right:40px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .title p {
+    font-weight:500;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info::before {/* 구분선 가상선택자 */
+    content:''; display:inline-block;
+    background-color:#000; width:100%; height:2px;
+    margin:40px 0;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info {}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info li {
+    display:flex; margin-bottom:22px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info li:last-child {
+    margin-bottom:0;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info li p {
+    font-weight:500; font-size:1.125rem;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info li p:first-child {width:93px;}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents > p {
+    margin-top:50px; font-size:1.063rem; line-height:1.5;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG {
+    display:flex; justify-content:center; align-items:center;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG .purpleBtn {
+    display:flex;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG .purpleBtn a {
+    background-color:#AA48B9; padding:12px; border-radius:10px; margin-right:30px;
+    display:flex; justify-content:center; align-items:center;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG .purpleBtn a p {
+    color:#fff; font-weight:500;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG .purpleBtn a img {
+    margin-left:10px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a {}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a img {}
+
+/* -------------------web_project 4행:울랄라 */
+/* -------------------web_project 5행:화해 */
+/* -------------------web_project 6행:WWF */
 /* -------------------design 4행 */
 #wrap .swiper-wrapper .swiper-slide.design {}
 /* -------------------contact 5행 */
