@@ -291,6 +291,19 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a {}
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a img {}
+/* 공통디자인끝, 4, 6행의 레이아웃 구조만 변경 */
+/* 개별 class명 : reverse + order로 좌우정렬변경 */
+#wrap .swiper-wrapper .swiper-slide.web_project.reverse .result {
+    order: 2;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project.reverse .explain {
+    order: 1;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project.reverse .explain .container2 {
+    border:1px solid red;
+    left:249px;
+}
+
 
 /* -------------------web_project 4행:울랄라 */
 /* -------------------web_project 5행:화해 */
