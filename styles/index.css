@@ -39,8 +39,7 @@ header nav .contactBtn {
 #wrap .swiper-wrapper .swiper-slide.profile {}
 #wrap .swiper-wrapper .swiper-slide.web_project {
     background-color:white;}
-#wrap .swiper-wrapper .swiper-slide.design {
-    background-color:green;}
+#wrap .swiper-wrapper .swiper-slide.design {}
 #wrap .swiper-wrapper .swiper-slide.contact {
     background-color:purple;}
 /* -------------------intro 1행 */
@@ -304,12 +303,70 @@ header nav .contactBtn {
     left:249px;
 }
 
-
 /* -------------------web_project 4행:울랄라 */
 /* -------------------web_project 5행:화해 */
 /* -------------------web_project 6행:WWF */
 /* -------------------design 4행 */
-#wrap .swiper-wrapper .swiper-slide.design {}
+#wrap .swiper-wrapper .swiper-slide.design {
+    padding:130px 200px 0;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container {
+    height:725px;
+    display:flex; justify-content:space-between; align-items:center;
+    border:1px solid orange;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left {
+    border:1px solid red;
+    width:1057px;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .title {
+    display:flex; justify-content:space-between;align-items:center;
+    margin-bottom:75px;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .title h1 {
+    font-size:2.75rem; font-weight:600;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .title h1 em {
+    color:#AA48B9; font-size:2.75rem; font-weight:600;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .title p {
+    padding-left:20px; border-left:4px solid #000;
+    color:#555; font-weight:500; font-size:1.125rem;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns {
+    border:1px solid palegreen;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper {
+    /* 보이는 영역 세팅 */
+    width:1057px; height:150px; border-radius:15px;
+    border:1px solid green;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide {
+    /* 스와이퍼 기본 내장값 제거 */
+    padding-top:0;
+    /* 이미지 높이100%으로 맞춘후 슬라이드사이 여백 보이게 설정 */
+    overflow:hidden;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide img {
+    height:100%;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper {
+    width:1057px; height:350px;
+    border:1px solid green;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide img {width:100%;}
+#wrap .swiper-wrapper .swiper-slide.design .container .right {
+    border:1px solid blue;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper {
+    width:400px; height:700px;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper .swiper-slide img {width:100%;}
 /* -------------------contact 5행 */
 #wrap .swiper-wrapper .swiper-slide.contact {}
 
