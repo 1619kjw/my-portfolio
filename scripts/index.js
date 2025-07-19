@@ -1,3 +1,12 @@
+/* nav 탭 클릭 시 활성화디자인변경 */
+const navTap = document.querySelectorAll('nav .left a');
+navTap.forEach((obj)=>{
+    obj.addEventListener('click',()=>{
+        navTap.forEach(tap=>tap.classList.remove('active'));
+        obj.classList.add('active');
+    })
+})
+
 /* 디자인 모음 영역 스와이퍼 구조 */
 //1. 배너 디자인 스와이퍼
 const bnrSwiper = new Swiper('#bnr_swiper',{

@@ -41,7 +41,7 @@ header nav .contactBtn {
     background-color:white;}
 #wrap .swiper-wrapper .swiper-slide.design {}
 #wrap .swiper-wrapper .swiper-slide.contact {
-    background-color:purple;}
+    background-color:#AA48B9;}
 /* -------------------intro 1행 */
 #wrap .swiper-wrapper .swiper-slide.intro {}
 
@@ -338,7 +338,7 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper {}
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide {
-    width:430px; height:150px; overflow: hidden; border-radius:10px;
+    width:430px; height:150px; overflow: hidden; border-radius:10px; cursor:pointer;
     /* 스와이퍼 기본 내장값 제거 */
     padding-top:0;
     /* 이미지 높이100%으로 맞춘후 슬라이드사이 여백 보이게 설정 */
@@ -355,7 +355,7 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper {}
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide {
-    width:300px; height:350px; border-radius:10px;
+    width:300px; height:350px; border-radius:10px; cursor:pointer;
     padding-top:0;/* 스와이퍼 기본 내장값 제거 */
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide img {
@@ -375,11 +375,33 @@ header nav .contactBtn {
 #wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper {}
 #wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper .swiper-slide {
     padding-top:0;/* 스와이퍼 내장 기본값 제거 */
-    width:400px; height:700px; overflow:hidden;
+    width:400px; height:700px; overflow:hidden; cursor:pointer;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper .swiper-slide img {width:100%;}
+
+
 /* -------------------contact 5행 */
-#wrap .swiper-wrapper .swiper-slide.contact {}
+#wrap .swiper-wrapper .swiper-slide.contact {
+    /* width:100%; height:771px; */
+}
+#wrap .swiper-wrapper .swiper-slide.contact .container {
+    display:flex;
+    border:3px solid red;
+    width:1447px; height:391px;
+    margin:0 auto; 
+}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .text {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .text p {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .text p em {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info {display:flex;}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info img {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info .contact {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info .contact > p {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info .contact .phone {display:flex;}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info .contact .phone p {}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info .contact .email {display:flex;}
+#wrap .swiper-wrapper .swiper-slide.contact .container .left .info .contact .email p {}
 
 /* 테스트 */
 .bar {/* 바 전체 */
