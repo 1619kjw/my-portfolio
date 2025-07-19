@@ -1,7 +1,7 @@
 /* 디자인 모음 영역 스와이퍼 구조 */
 //1. 배너 디자인 스와이퍼
 const bnrSwiper = new Swiper('#bnr_swiper',{
-    slidesPerView:2.5,/* 한화면에 보이는 개수 */
+    slidesPerView:'auto',/* 한화면에 보이는 개수 */
     spaceBetween:15,/* 사이간격 */
     autoplay:{delay:0,},
     speed:4000,/* 밀리초로 속도 적어주기 */
@@ -9,7 +9,7 @@ const bnrSwiper = new Swiper('#bnr_swiper',{
 })
 //2. SNS 디자인 스와이퍼
 const snsSwiper = new Swiper('#sns_swiper',{
-    slidesPerView:4.5,
+    slidesPerView:'auto',
     spaceBetween:15,
     autoplay:{delay:0},
     speed:4000,
@@ -19,8 +19,12 @@ const snsSwiper = new Swiper('#sns_swiper',{
 const detailSwiper = new Swiper('#detail_swiper',{
     slidesPerView:1,
     spaceBetween:0,
-    autoplay:{delay:0},
-    speed:4000,
+    // autoplay:{delay:0},
+    // speed:4000,
     loop:true,
-    pagenation:'bullets',
+    pagination:{
+        el:'.swiper-pagination',
+        type:'bullets',
+        clickable: true,
+    },
 })

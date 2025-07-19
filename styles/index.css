@@ -313,10 +313,8 @@ header nav .contactBtn {
 #wrap .swiper-wrapper .swiper-slide.design .container {
     height:725px;
     display:flex; justify-content:space-between; align-items:center;
-    border:1px solid orange;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left {
-    border:1px solid red;
     width:1057px;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .title {
@@ -333,39 +331,52 @@ header nav .contactBtn {
     padding-left:20px; border-left:4px solid #000;
     color:#555; font-weight:500; font-size:1.125rem;
 }
-#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns {
-    border:1px solid palegreen;
-}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns {}
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper {
     /* 보이는 영역 세팅 */
     width:1057px; height:150px; border-radius:15px;
-    border:1px solid green;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper {}
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide {
+    width:430px; height:150px; overflow: hidden; border-radius:10px;
     /* 스와이퍼 기본 내장값 제거 */
     padding-top:0;
     /* 이미지 높이100%으로 맞춘후 슬라이드사이 여백 보이게 설정 */
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide img {
-    height:100%;
+    width:100%; object-fit:cover;/* 범위안에 이미지 채우기 */
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide img[src*='bnr01.png'] {
+    transform: scale(1.09); /* 높이가 짧은 이미지 : 빈공간 없애기 위해 살짝 확대 */
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper {
-    width:1057px; height:350px;
-    border:1px solid green;
+    width:1057px; height:350px; border-radius:10px; margin-top:15px;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper {}
-#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide {}
-#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide img {width:100%;}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide {
+    width:300px; height:350px; border-radius:10px;
+    padding-top:0;/* 스와이퍼 기본 내장값 제거 */
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper .swiper-wrapper .swiper-slide img {
+    width:100%; object-fit:cover; border-radius:10px;
+}
 #wrap .swiper-wrapper .swiper-slide.design .container .right {
-    border:1px solid blue;
+    position:relative;/* pagination부모위치기준 */
+    width:400px; height:725px;
+}
+#wrap .swiper-wrapper .swiper-slide.design .container .right .swiper-pagination {
+    position:absolute; bottom:0;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper {
-    width:400px; height:700px;
+    width:400px; height:700px; display:flex; flex-direction: column; justify-content:space-between;
+    border-radius:15px;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper {}
-#wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper .swiper-slide {
+    padding-top:0;/* 스와이퍼 내장 기본값 제거 */
+    width:400px; height:700px; overflow:hidden;
+}
 #wrap .swiper-wrapper .swiper-slide.design .container .right #detail_swiper .swiper-wrapper .swiper-slide img {width:100%;}
 /* -------------------contact 5행 */
 #wrap .swiper-wrapper .swiper-slide.contact {}
