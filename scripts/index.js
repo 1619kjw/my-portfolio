@@ -37,3 +37,44 @@ const detailSwiper = new Swiper('#detail_swiper',{
         clickable: true,
     },
 })
+
+
+
+/* 팝업 */
+//디자인 프로젝트 클릭 시 팝업 실행(클릭한 이미지가 팝업 이미지로 교체)
+const designProject = document.querySelectorAll('.design .container .swiper-slide');/* 배너, sns, 상세디자인 슬라이드 모두 잡기 */
+const popup = document.querySelector('.popup_bg');
+const popupImg = document.querySelector('.popup img');
+for(let design of designProject){
+    design.addEventListener('click',()=>{
+        popup.style.display='block';/* 클릭시팝업보이기 */
+        popupImg.src = design.querySelector('img').src;/* 슬라이드에서 img태그를 찾아서 src경로를 바꾸기 */
+        //팝업 실행 시 전체 수직 Swiper 스크롤 기능 막기
+        wrap.mousewheel.disable();//스크롤 풀기 enable()
+    })
+}
+/* 팝업배경 클릭 시 팝업 사라지기 */
+popup.addEventListener('click',()=>{
+    popup.style.display='none';
+    wrap.mousewheel.enable();//스크롤 풀기 enable()
+})
+
+
+
+/* 내비게이션 클릭 시 해당 위치 수직 스와이프로 이동 */
+const nav = document.querySelectorAll('nav a');
+// 원하는 슬라이드 인덱스를 배열로 지정 (Intro, Profile, Web-Project, Design 순서)
+/* nav메뉴 4개가 어느 슬라이드로 향할건지 mapping해주었다 */
+const slideMap = [0, 1, 2, 6, 7]; // 여기서 2는 Web-Project의 첫 페이지, 6은 Design 페이지
+
+//수직 스와이프 이동 함수
+//수직스와이프명.slideTo(이동인덱스값, 지속시간)
+nav.forEach((obj, idx)=>{
+    console.log(obj, idx);
+    obj.addEventListener('click',(e)=>{
+        e.preventDefault();//a의 href기본기능막기
+        wrap.slideTo(slideMap[idx], 1000); // 지정된 인덱스로 이동
+    })
+})
+
+
