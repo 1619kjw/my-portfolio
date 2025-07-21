@@ -215,13 +215,14 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.#denps {}
 #wrap .swiper-wrapper .swiper-slide.web_project .result {
-    background-color:#ddd; width:1061px;
+    width:1061px;
+    background-image:url(../images/mockup_bg1.png);
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .result .container1 {
     width:max-content; display:flex; flex-flow:column nowrap;
     margin:0 auto; position:relative; top:95px;
 }
-#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 > img {
+#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 > img {/* 노트북목업 */
     margin:0 auto; margin-bottom:50px;
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .result .container1 .protoBtn {/* 프로토타입보기 버튼 */
@@ -255,7 +256,7 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info::before {/* 구분선 가상선택자 */
     content:''; display:inline-block;
-    background-color:#000; width:100%; height:2px;
+    background-color:#000; width:100%; height:1px;
     margin:40px 0;
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .contents .con_top .product_info {}
