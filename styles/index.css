@@ -214,9 +214,9 @@ header nav .contactBtn {
     display:flex;
 }
 #wrap .swiper-wrapper .swiper-slide.#denps {}
-#wrap .swiper-wrapper .swiper-slide.web_project .result {
-    width:1061px;
-    background-image:url(../images/mockup_bg1.png);
+#wrap .swiper-wrapper .swiper-slide.web_project .result {/* 노트북목업 뒷배경 */
+    width:1061px;/* 너비통일, 이미지만 바꾸기 */
+    /* background-image:url(../images/mockup_bg1.png); */
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .result .container1 {
     width:max-content; display:flex; flex-flow:column nowrap;
@@ -301,6 +301,9 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.web_project.reverse .explain .container2 {
     left:249px;
+}
+#wrap .swiper-wrapper .swiper-slide.web_project#denps .result {
+    background-image:url(../images/web/mockup_bg1.png);
 }
 
 /* -------------------web_project 4행:울랄라 */
