@@ -1,8 +1,38 @@
+const navLeftTap = document.querySelectorAll('nav .left a');
+console.log(navLeftTap[2]);
+// 전체 수직 스크롤 스와이퍼
+const wrap = new Swiper('#wrap',{
+    direction:'vertical',
+    mousewheel:true,
+    on: {/* 스크롤 이동 시 해당 nav활성화 디자인 적용 */
+        slideChangeTransitionEnd: function () {
+            for(let i of nav) i.classList.remove('active')/* 모든 nav탭 active 제거 */
+            const index = this.activeIndex; /* 각 활성화된 슬라이드를 나타내는 변수 */
+            console.log(index);
+            //1. 슬라이드 인덱스 2~5번일 경우: Web-Project 메뉴에 active
+            if (index >= 2 && index <= 5) {
+                navLeftTap[2].classList.add("active");
+            }
+            //2. 나머지 : 해당 index와 일치하는 메뉴에 active(if,else충돌되어 각각 작성함)
+            if(index==0) {/* 인덱스0번 슬라이드위치일때, 0번메뉴에 활성화디자인 적용 */
+                navLeftTap[0].classList.add("active");
+            }if(index==1){
+                navLeftTap[1].classList.add("active");
+            }if(index==6){/* 인덱스6번 슬라이드위치일때, 3번메뉴에 활성화디자인 적용 */
+                navLeftTap[3].classList.add("active");
+            }
+            setTimeout(() => {
+                ScrollTrigger.refresh(); // ★ Swiper 로드 후 강제 새로고침 ★
+            }, 0);
+        }
+    },
+})
+
 /* nav 탭 클릭 시 활성화디자인변경 */
-const navTap = document.querySelectorAll('nav .left a');
-navTap.forEach((obj)=>{
+// const navLeftTap = document.querySelectorAll('nav .left a');
+navLeftTap.forEach((obj)=>{
     obj.addEventListener('click',()=>{
-        navTap.forEach(tap=>tap.classList.remove('active'));
+        navLeftTap.forEach(tap=>tap.classList.remove('active'));
         obj.classList.add('active');
     })
 })
@@ -76,5 +106,3 @@ nav.forEach((obj, idx)=>{
         wrap.slideTo(slideMap[idx], 1000); // 지정된 인덱스로 이동
     })
 })
-
-

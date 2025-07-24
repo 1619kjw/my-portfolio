@@ -229,13 +229,16 @@ header nav .contactBtn {
     margin:0 auto; display:flex; align-items:center;
     background-color:#AA48B9; padding:12px; border-radius:10px;
 }
+#wrap .swiper-wrapper .swiper-slide.web_project .result .container1 .protoBtn:hover {
+    background-color:#872297;
+}
 #wrap .swiper-wrapper .swiper-slide.web_project .result .container1 .protoBtn p {
     font-weight:500; color:#fff;
     margin-right:10px; 
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .result .container1 .protoBtn img {}
 #wrap .swiper-wrapper .swiper-slide.web_project .explain {
-    background-color:#F3EEDF; width:859px;
+    /* background-color:#F3EEDF; */ width:859px;
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 {
     width:530px;
@@ -283,13 +286,19 @@ header nav .contactBtn {
     background-color:#AA48B9; padding:12px; border-radius:10px; margin-right:30px;
     display:flex; justify-content:center; align-items:center;
 }
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG .purpleBtn a:hover {
+    background-color:#872297;
+}
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG .purpleBtn a p {
     color:#fff; font-weight:500;
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG .purpleBtn a img {
     margin-left:10px;
 }
-#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a {}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a {/* 깃허브버튼 */}
+#wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a:hover {
+    
+}
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a img {}
 /* 공통디자인끝, 4, 6행의 레이아웃 구조만 변경 */
 /* 개별 class명 : reverse + order로 좌우정렬변경 */
@@ -302,8 +311,18 @@ header nav .contactBtn {
 #wrap .swiper-wrapper .swiper-slide.web_project.reverse .explain .container2 {
     left:249px;
 }
+/* 웹프로젝트 별 개별 뒷배경 */
 #wrap .swiper-wrapper .swiper-slide.web_project#denps .result {
-    background-image:url(../images/web/mockup_bg1.png);
+    background-image:url(../images/web/mockup_bg1-1.png);
+}
+#wrap .swiper-wrapper .swiper-slide.web_project#ullala .result {
+    background-image:url(../images/web/mockup_bg2-1.png);
+}
+#wrap .swiper-wrapper .swiper-slide.web_project#hwahae .result {
+    background-image:url(../images/web/mockup_bg3-1.png);
+}
+#wrap .swiper-wrapper .swiper-slide.web_project#wwf .result {
+    background-image:url(../images/web/mockup_bg4-1.png);
 }
 
 /* -------------------web_project 4행:울랄라 */
