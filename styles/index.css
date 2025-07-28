@@ -139,6 +139,10 @@ header nav .contactBtn {
 #wrap .swiper-wrapper .swiper-slide.profile .container .right .first .education .contents {
     /* 수직중앙정렬 */
 }
+#wrap .swiper-wrapper .swiper-slide.profile .container .right .first .wrap.education .contents .classification h2:first-child {
+    font-size:0.938rem; font-weight:500; color:#777;
+    margin-bottom:29px; width:max-content;
+}
 /* --------------------------3열 : 스킬 설명 영역 */
 #wrap .swiper-wrapper .swiper-slide.profile .container .right .second {
     width:400px;
