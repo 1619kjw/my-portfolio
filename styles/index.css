@@ -501,7 +501,7 @@ to { width: 35%; }
     display:none;/* 초기숨기기(부모에만 해주면됨) */
 }
 .popup_bg .popup {
-    width:700px; margin:100px auto 0;/* 너비를 줘서 자식인 img크기가 자동으로 따라오도록+가운데배치 */
+    width:800px; margin:120px auto 0;/* 너비를 줘서 자식인 img크기가 자동으로 따라오도록+가운데배치 */
     height:80%; overflow:auto;/* 어느정도 안에서 보고싶은지 크기설정+그 범위보다 넘치면 자동으로 스크롤생성하도록 auto설정 */
 }
 .popup_bg .popup img {width:100%;}
