@@ -301,7 +301,7 @@ header nav .contactBtn {
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a {/* 깃허브버튼 */}
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a:hover {
-    
+    filter:invert(1);
 }
 #wrap .swiper-wrapper .swiper-slide.web_project .explain .container2 .btnG > a img {}
 /* 공통디자인끝, 4, 6행의 레이아웃 구조만 변경 */
@@ -503,5 +503,6 @@ to { width: 35%; }
 .popup_bg .popup {
     width:800px; margin:120px auto 0;/* 너비를 줘서 자식인 img크기가 자동으로 따라오도록+가운데배치 */
     height:80%; overflow:auto;/* 어느정도 안에서 보고싶은지 크기설정+그 범위보다 넘치면 자동으로 스크롤생성하도록 auto설정 */
+    /* position:relative; top:50px; left:0; =>가로배너만 팝업이 수직중앙에 오게 하고 싶은데 방법찾아보기 */
 }
 .popup_bg .popup img {width:100%;}
