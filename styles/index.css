@@ -20,6 +20,7 @@ header nav .left a {
 header nav .left a:last-child {
     margin-right:0;
 }
+header nav .left a:hover {color:#AA48B9;}
 header nav .left a.active {
     color:#AA48B9; border-bottom:3px solid #AA48B9;
 }
@@ -27,6 +28,7 @@ header nav .contactBtn {
     color:#fff; background:#AA48B9;
     padding:12px; border-radius:5px;
 }
+header nav .contactBtn:hover {background-color:#872297;}
 #wrap {
     height:100vh;
 }
@@ -73,12 +75,12 @@ header nav .contactBtn {
 #wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition p {
     font-weight:500; line-height:1.5; letter-spacing:0.05em; color:#444;
     position:relative;/* 가상선택자(밑줄)의 부모위치기준 */
-    z-index:20;
+    z-index:20; font-size:1.25rem;
 }
 #wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition p em::before {
     content:''; display:inline-block;
-    background-color:#C7CFF8; width:250px; height:8px;
-    position:absolute; left:5.77px; bottom:25.62px;
+    background-color:#C7CFF8; width:220px; height:8px;
+    position:absolute; left:48px; bottom:3px;
     z-index:-999;
 }
 #wrap .swiper-wrapper .swiper-slide.profile .container .left .contents .photo_ambition p em {
@@ -217,7 +219,7 @@ header nav .contactBtn {
     /* 3,4,5,6행 공통 디자인 class*/
     display:flex;
 }
-#wrap .swiper-wrapper .swiper-slide.#denps {}
+#wrap .swiper-wrapper .swiper-slide#denps {}
 #wrap .swiper-wrapper .swiper-slide.web_project .result {/* 노트북목업 뒷배경 */
     width:1061px;/* 너비통일, 이미지만 바꾸기 */
     /* background-image:url(../images/mockup_bg1.png); */
@@ -330,6 +332,12 @@ header nav .contactBtn {
 }
 
 /* -------------------web_project 4행:울랄라 */
+/* 반응형 목업 추가, margin으로 위치조정*/
+#wrap .swiper-wrapper .swiper-slide.web_project#ullala .result .container1 {top:125px;}
+#wrap .swiper-wrapper .swiper-slide.web_project#ullala .result .container1 .mockupG {margin-bottom:50px;}
+#wrap .swiper-wrapper .swiper-slide.web_project#ullala .result .container1 .mockupG .desktop {margin-right:-66px;}
+#wrap .swiper-wrapper .swiper-slide.web_project#ullala .result .container1 .mockupG .tablet {margin-right:-35px;}
+#wrap .swiper-wrapper .swiper-slide.web_project#ullala .result .container1 .mockupG .mobile {}
 /* -------------------web_project 5행:화해 */
 /* -------------------web_project 6행:WWF */
 /* -------------------design 4행 */
@@ -374,7 +382,7 @@ header nav .contactBtn {
     width:100%; object-fit:cover;/* 범위안에 이미지 채우기 */
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide img[src*='bnr01.png'] {
-    transform: scale(1.09); 높이가 짧은 이미지 : 빈공간 없애기 위해 살짝 확대
+    transform: scale(1.09); /* 높이가 짧은 이미지 : 빈공간 없애기 위해 살짝 확대 */
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper {
     width:1057px; height:350px; border-radius:10px; margin-top:15px;
