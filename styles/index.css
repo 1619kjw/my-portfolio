@@ -381,8 +381,9 @@ header nav .contactBtn:hover {background-color:#872297;}
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide img {
     width:100%; object-fit:cover;/* 범위안에 이미지 채우기 */
 }
-#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide img[src*='bnr01.png'] {
-    transform: scale(1.09); /* 높이가 짧은 이미지 : 빈공간 없애기 위해 살짝 확대 */
+#wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #bnr_swiper .swiper-wrapper .swiper-slide img[src*='hwahae'] {
+    transform: scale(5); /* 높이가 짧은 이미지 : 빈공간 없애기 위해 살짝 확대 */
+    position:relative; left:-300px;
 }
 #wrap .swiper-wrapper .swiper-slide.design .container .left .bnr_sns #sns_swiper {
     width:1057px; height:350px; border-radius:10px; margin-top:15px;
