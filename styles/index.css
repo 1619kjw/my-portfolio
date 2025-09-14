@@ -457,6 +457,27 @@ header nav .contactBtn:hover {background-color:#872297;}
     font-size:1.25rem; color:#fff;
 }
 
+/* 웹프로젝트 영역 스와이퍼구조로 변경 */
+/* .result {height:100vh;}
+#wrap .web .swiper-wrapper .swiper-slide {padding-top:0;}
+#wrap .swiper-wrapper .swiper-slide .web {
+    position:relative;
+}
+#wrap .swiper-wrapper .swiper-slide .web .swiper-pagination {
+    position:absolute; top:500px; left:100px; 
+    z-index:600;
+}
+.web .swiper-button-prev {
+    top:500px; position:absolute;
+}
+.web .swiper-button-next {
+    position:absolute;
+} */
+
+
+
+
+
 /* 테스트 */
 .bar {/* 바 전체 */
 width: 160px;
@@ -515,3 +536,4 @@ to { width: 35%; }
     /* position:relative; top:50px; left:0; =>가로배너만 팝업이 수직중앙에 오게 하고 싶은데 방법찾아보기 */
 }
 .popup_bg .popup img {width:100%;}
+

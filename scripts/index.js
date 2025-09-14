@@ -37,6 +37,19 @@ navLeftTap.forEach((obj)=>{
     })
 })
 
+
+/* 웹프로젝트 영역 스와이퍼 구조 */
+/* const webSwiper = new Swiper('.web',{
+    direction:'horizon',
+    slidesPerView:1,
+    pagination:'.swiper-pagination',
+    navigation:{
+        prevEl:'.web .swiper-button-prev',
+        nextEl:'.web .swiper-button-next',
+    },
+}) */
+
+
 /* 디자인 모음 영역 스와이퍼 구조 */
 //1. 배너 디자인 스와이퍼
 const bnrSwiper = new Swiper('#bnr_swiper',{
